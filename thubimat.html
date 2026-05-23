@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lá Thư Bí Mật 💌</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(135deg,#ffd6e7,#ffe9f2);
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+button{
+    padding:15px 35px;
+    font-size:22px;
+    border:none;
+    border-radius:15px;
+    background:#ff4f81;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.letter{
+    width:320px;
+    background:white;
+    margin-top:25px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    display:none;
+    animation:fadeIn 1s ease;
+}
+
+h2{
+    color:#ff4f81;
+}
+
+p{
+    font-size:18px;
+    line-height:1.7;
+    color:#444;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <button onclick="openLetter()">📩 Mở Thư</button>
+
+    <div class="letter" id="letter">
+        <h2>GỬI ĐẾN NGƯỜI SIÊU ĐẶC BIỆT ❤️</h2>
+        <p>
+            Hài thân mến! Định viết thư tay nhưng nhớ ra không biết lúc nào mới có cơ hội 
+         nên đành viết bức thư điện tử như này.Cũng không có gì đâu,như mình cũng đã nói 
+         qua với cậu rồi đấy.Ngày 14/6/2026 tức là CHỦ NHẬT sau khi thi xong tôi muốn gặp 
+         cậu buổi tối hôm đó tầm 8h30' hoặc 9h tối,rất mong cậu sẽ gặp tôi ngày hôm đó,mong
+         rằng lúc đó tôi cũng đã chuẩn bị xong và cậu cũng sẽ tới,sáng hôm đó đi ăn rồi nên
+         tôi muốn hẹn tối cũng là để cho yên tĩnh.
+         .Giờ thì cậu hãy cố gắng học tốt nhé,mong những điều tốt đẹp sẽ đến với cậu nhiều hơn💖
+        </p>
+    </div>
+</div>
+
+<script>
+function openLetter(){
+    document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
